@@ -9,20 +9,16 @@ import java.util.Scanner;
 public class task3 {
 
    public static void main(String[] args) {
-      
-      double firstNum;
-      double secondNum;
-      double result;
-      char opr;
-      Scanner reader = new Scanner(System.in);
+      Scanner in = new Scanner(System.in);
       System.out.print("Введите первое число: ");
-      firstNum = reader.nextDouble();
-      System.out.print("Введите второе число: ");
-      secondNum = reader.nextDouble();
+      double firstNum = in.nextDouble();
       System.out.print("Введите оператор: (+, -, *, /): ");
-      opr = reader.next().charAt(0);
+      char Opr = in.next().charAt(0);
+      System.out.print("Введите второе число: ");
+      double secondNum = in.nextDouble();
+      double result; 
 
-      switch(opr) {
+      switch(Opr) {
          case '+': result = firstNum + secondNum;
             break;
          case '-': result = firstNum - secondNum;
@@ -34,9 +30,11 @@ public class task3 {
          default:  System.out.printf("Неверно! Введите корректный оператор");
             return;
       }
+      
       System.out.println("Полученный результат: ");
-      System.out.printf(firstNum + " " + opr + " " + secondNum + " = " + result);
+      System.out.printf(firstNum + " " + Opr + " " + secondNum + " = " + result);
   }
 }
-    
+
+// не получается убрать нули после запятой
 
