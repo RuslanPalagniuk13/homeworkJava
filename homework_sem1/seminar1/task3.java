@@ -31,10 +31,13 @@ public class task3 {
             return;
       }
       
-      System.out.println("Полученный результат: ");
-      System.out.printf(firstNum + " " + Opr + " " + secondNum + " = " + result);
+      if(result % 1 == 0 && firstNum % 1 == 0 && secondNum % 1 == 0) {
+         System.out.println("Полученный результат: " + (int)firstNum + " " + Opr + " " + (int)secondNum + " = " + (int)result);
+      }else {
+         System.out.println("Полученный результат: " + (int)firstNum + " " + Opr + " " + (int)secondNum + " = " + result);
+      }
   }
+
 }
 
-// не получается убрать нули после запятой
 
