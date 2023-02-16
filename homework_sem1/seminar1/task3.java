@@ -31,10 +31,12 @@ public class task3 {
             return;
       }
       
-      if(result % 1 == 0 && firstNum % 1 == 0 && secondNum % 1 == 0) {
+      if(firstNum % 1 == 0 && secondNum % 1 == 0 && result % 1 == 0) {
+         System.out.println("Полученный результат: " + (int)firstNum + " " + Opr + " " + (int)secondNum + " = " + (int)result);
+      }else if(firstNum % 1 == 0 && secondNum % 1 == 0) {
          System.out.println("Полученный результат: " + (int)firstNum + " " + Opr + " " + (int)secondNum + " = " + (int)result);
       }else {
-         System.out.println("Полученный результат: " + (int)firstNum + " " + Opr + " " + (int)secondNum + " = " + result);
+         System.out.println("Полученный результат: " + firstNum + " " + Opr + " " + secondNum + " = " + result);
       }
   }
 
